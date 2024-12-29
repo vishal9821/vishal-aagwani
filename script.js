@@ -8,6 +8,7 @@ const year = document.querySelector("#year")
 const btn_open = document.querySelector(".btn-open");
 const btn_close = document.querySelector(".btn-close");
 const nav = document.querySelectorAll(".nav");
+const nav_opt = document.querySelectorAll(".nav-opt");
 
 window.addEventListener('scroll' , scrollbox)
 scrollbox();
@@ -66,3 +67,7 @@ btn_close.addEventListener("click",()=>{
     nav.forEach(nav_el=>nav_el.classList.remove('visible'));
     setTimeout(()=>btn_open.style.visibility = "visible",600);
 })
+nav_opt.forEach(navbtn=>navbtn.addEventListener("click",()=>{
+    nav.forEach(nav_el=>nav_el.classList.remove('visible'));
+    setTimeout(()=>btn_open.style.visibility = "visible",600);
+}));
