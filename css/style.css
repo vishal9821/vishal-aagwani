@@ -2202,7 +2202,7 @@ h3.heading2 {
     right: 0.2rem;
  }
 }
-@media(max-width:400px) and (max-height:816px){
+@media(max-width:480px) and (max-height:816px){
     /* --------------------------header part------------------------------------ */
     body{
         padding: 5px;
@@ -3252,3 +3252,12 @@ h3.heading2 {
  }
 }
 /*------------------------------------------------------------larger screens--------------------------------------------------------------*/
+@media(min-width:1920px){
+    .about{
+        margin-top: -21vh;
+        clip-path: polygon(0 0,100% 21vh,100% 100%, 0 100%);
+      }
+      .box-bottom{
+       height: 31vh;
+    }
+}
