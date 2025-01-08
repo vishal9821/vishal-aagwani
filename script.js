@@ -1,5 +1,5 @@
 const boxes = document.querySelectorAll(".box");
-const video = document.querySelector("video");
+const videos = document.querySelectorAll("video");
 const nextbtn = document.querySelector(".carousel-control-next");
 const prevbtn = document.querySelector(".carousel-control-prev");
 const footer = document.querySelector(".my_work");
@@ -13,27 +13,30 @@ const nav_opt = document.querySelectorAll(".nav-opt");
 window.addEventListener('scroll' , scrollbox)
 scrollbox();
 
-// video.addEventListener('mouseenter',()=>{
-//     video.play();
-// });
+videos.forEach(video=>{
 
-// video.addEventListener('mouseleave',()=>{
-//     video.pause();
-// });
-// nextbtn.addEventListener('mouseenter',()=>{
-//     video.play();
-// });
+video.addEventListener('mouseenter',()=>{
+    video.play();
+});
 
-// nextbtn.addEventListener('mouseleave',()=>{
-//     video.pause();
-// });
-// prevbtn.addEventListener('mouseenter',()=>{
-//     video.play();
-// });
+video.addEventListener('mouseleave',()=>{
+    video.pause();
+});
+nextbtn.addEventListener('mouseenter',()=>{
+    video.play();
+});
 
-// prevbtn.addEventListener('mouseleave',()=>{
-//     video.pause();
-// });
+nextbtn.addEventListener('mouseleave',()=>{
+    video.pause();
+});
+prevbtn.addEventListener('mouseenter',()=>{
+    video.play();
+});
+
+prevbtn.addEventListener('mouseleave',()=>{
+    video.pause();
+});
+});
 
 function scrollbox(){
     const triggerbotton = window.innerHeight/1.4;
